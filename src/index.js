@@ -10,7 +10,7 @@ import definTable from './definTable/index'
 import defineColumn from './defineColumn/index'
 import bosPaginator from './bosPaginator/index'
 import baseSelect from './Input/baseSelect/index'
-import dataSelect from './Input/dataSelect/index'
+import dateSelect from './Input/dateSelect/index'
 import defineInput from './Input/defineInput/index'
 import textInput from './Input/textInput/index'
 
@@ -28,7 +28,7 @@ const components = [
   defineColumn,
   bosPaginator,
   baseSelect,
-  dataSelect,
+  dateSelect,
   defineInput,
   textInput,
 ];
@@ -61,7 +61,7 @@ export default {
   defineColumn,
   bosPaginator,
   baseSelect,
-  dataSelect,
+  dateSelect,
   defineInput,
   textInput,
 }

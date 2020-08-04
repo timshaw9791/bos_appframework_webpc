@@ -28,7 +28,7 @@
     import {judgeRules} from "../../js/rules"
 
     export default {
-        name: 'dataSelect',
+        name: 'dateSelect',
         data() {
             return {
                 selectValue: "",
