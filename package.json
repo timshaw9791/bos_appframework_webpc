@@ -1,8 +1,8 @@
 {
   "name": "testpro-project1",
   "description": "",
-  "version": "1.0.2",
-  "author": "akatsuki_miao",
+  "version": "1.0.3",
+  "author": "testpro",
   "license": "MIT",
   "private": false,
   "main": "dist/testpro.js",

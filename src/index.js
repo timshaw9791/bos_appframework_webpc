@@ -1,10 +1,36 @@
-import Breadcrumb from './Breadcrumb/index';
+import breadCrumb from './breadCrumb/index';
 import defineTextarea from './defineTextarea/index';
+import defineRow from './defineRow/index'
+import defineSearch from './defineSearch/index'
+import baseButton from './baseButton/index'
+// import entityInput from './entityInput/index'
+import defineForm from './defineForm/index'
+import bosTabs from './bosTabs/index'
+import definTable from './definTable/index'
+import defineColumn from './defineColumn/index'
+import bosPaginator from './bosPaginator/index'
+import baseSelect from './Input/baseSelect/index'
+import dataSelect from './Input/dataSelect/index'
+import defineInput from './Input/defineInput/index'
+import textInput from './Input/textInput/index'
 
 
 const components = [
-  Breadcrumb,
-  defineTextarea
+  breadCrumb,
+  defineTextarea,
+  defineRow,
+  defineSearch,
+  baseButton,
+  // entityInput,
+  defineForm,
+  bosTabs,
+  definTable,
+  defineColumn,
+  bosPaginator,
+  baseSelect,
+  dataSelect,
+  defineInput,
+  textInput,
 ];
 
 //script标签方式映入
@@ -19,11 +45,23 @@ if (typeof window !== 'undefined' && window.Vue) {
   all(window.Vue);
 }
 
-
 export default {
   //总体
   all,
   //支持按需引入
   Breadcrumb,
-  defineTextarea
+  defineTextarea,
+  defineRow,
+  defineSearch,
+  baseButton,
+  // entityInput,
+  defineForm,
+  bosTabs,
+  definTable,
+  defineColumn,
+  bosPaginator,
+  baseSelect,
+  dataSelect,
+  defineInput,
+  textInput,
 }

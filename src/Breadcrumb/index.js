@@ -1,8 +1,8 @@
-import Breadcrumb from './Breadcrumb.vue'
+import breadCrumb from './breadCrumb.vue'
 
-Breadcrumb.intall = function (Vue){
-  Vue.component(Breadcrumb.name, Breadcrumb);
+breadCrumb.intall = function (Vue){
+  Vue.component(breadCrumb.name, breadCrumb);
 };
 
-export default Breadcrumb;
+export default breadCrumb;
 
