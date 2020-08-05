@@ -34,7 +34,7 @@ const components = [
 ];
 
 //script标签方式映入
-const all = function(Vue, opts = {}) {
+const install = function(Vue, opts = {}) {
   components.forEach(component => {
     Vue.component(component.name, component);
   });
@@ -42,14 +42,14 @@ const all = function(Vue, opts = {}) {
 
 //支持使用标签方式引入
 if (typeof window !== 'undefined' && window.Vue) {
-  all(window.Vue);
+  install(window.Vue);
 }
 
 export default {
   //总体
-  all,
+  install,
   //支持按需引入
-  Breadcrumb,
+  breadCrumb,
   defineTextarea,
   defineRow,
   defineSearch,
