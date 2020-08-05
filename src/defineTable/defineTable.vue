@@ -19,11 +19,11 @@
     import bosPaginator from '../bosPaginator/bosPaginator'
 
     export default {
+        name: "defineTable",
         components:{
             bosPaginator,
             defineColumn
         },
-        name: "definTable",
         data() {
             return {
                 selectData: '',

@@ -12,19 +12,27 @@
                :style="`text-align:${fixInputTextAlign}`"
                readonly :placeholder="fixPlaceholder"/>
         <div class="icon">
-            <i class="iconfont iconwenbenkuangshanchu" @click="clear"
+            <i class="el-icon-circle-close" @click="clear"
                v-show="insideValue&&!disabled"></i>
-            <i class="iconfont icon-sousuo" @click="showSearch" v-show="search&&!disabled"></i>
+            <i class="el-icon-search" @click="showSearch" v-show="search&&!disabled"></i>
             <!-- <i class="iconfont iconxiang" @click="showDetail" v-show="detail&&(inTable||disabled)&&!!insideValue">aa</i> -->
         </div>
 
-        <slot></slot>
-        
+        <!-- 基本样例 -->
+        <service-dialog title="领域模型数据" ref="example" :button="false" :secondary="false">
+            <example @select="selected" @cancel="$refs.example.hide()"></example>
+        </service-dialog>
     </div>
 </template>
 
 <script>
+    import example from './select/example'
+    import serviceDialog from '../serviceDialog/serviceDialog'
     export default {
+        components: {
+            example,
+            serviceDialog
+        },
         name: 'entityInput',
         data() {
             return {

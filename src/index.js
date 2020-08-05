@@ -3,10 +3,10 @@ import defineTextarea from './defineTextarea/index';
 import defineRow from './defineRow/index'
 import defineSearch from './defineSearch/index'
 import baseButton from './baseButton/index'
-// import entityInput from './entityInput/index'
+import entityInput from './entityInput/index'
 import defineForm from './defineForm/index'
 import bosTabs from './bosTabs/index'
-import definTable from './definTable/index'
+import defineTable from './defineTable/index'
 import defineColumn from './defineColumn/index'
 import bosPaginator from './bosPaginator/index'
 import baseSelect from './Input/baseSelect/index'
@@ -21,10 +21,10 @@ const components = [
   defineRow,
   defineSearch,
   baseButton,
-  // entityInput,
+  entityInput,
   defineForm,
   bosTabs,
-  definTable,
+  defineTable,
   defineColumn,
   bosPaginator,
   baseSelect,
@@ -54,10 +54,10 @@ export default {
   defineRow,
   defineSearch,
   baseButton,
-  // entityInput,
+  entityInput,
   defineForm,
   bosTabs,
-  definTable,
+  defineTable,
   defineColumn,
   bosPaginator,
   baseSelect,
