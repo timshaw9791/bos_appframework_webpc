@@ -1,8 +1,8 @@
 {
-  "name": "testpro-project",
+  "name": "bosappframework_webpc",
   "description": "",
-  "version": "1.0.61",
-  "author": "testpro",
+  "version": "1.0.63",
+  "author": "bos",
   "license": "MIT",
   "private": false,
   "main": "dist/testpro.js",

@@ -23,3 +23,11 @@ npm run serve
 ```
 npm run build
 ```
+## 如何使用？
+```
+npm i bosappframework_webpc --save
+const locator = require('bosappframework_webpc/src/test');
+
+```
+
+
