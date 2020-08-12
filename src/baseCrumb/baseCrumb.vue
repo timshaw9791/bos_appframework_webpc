@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "breadCrumb",
+  name: "baseCrumb",
   props:['Breaditem'],
   data(){
     return{

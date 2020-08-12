@@ -1,5 +1,4 @@
 # bos_appframework_webpc
-
 ## 使用方式
 ```
   在element.js里输入
@@ -22,4 +21,10 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+```
+### 基本npm发布相关命令
+```
+npm login
+npm adduser
+npm publish
 ```

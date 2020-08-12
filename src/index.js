@@ -1,4 +1,4 @@
-import breadCrumb from './breadCrumb/index';
+import baseCrumb from './baseCrumb/index';
 import defineTextarea from './defineTextarea/index';
 import defineRow from './defineRow/index'
 import defineSearch from './defineSearch/index'
@@ -9,14 +9,17 @@ import bosTabs from './bosTabs/index'
 import defineTable from './defineTable/index'
 import defineColumn from './defineColumn/index'
 import bosPaginator from './bosPaginator/index'
-import baseSelect from './Input/baseSelect/index'
 import dateSelect from './Input/dateSelect/index'
 import defineInput from './Input/defineInput/index'
 import textInput from './Input/textInput/index'
+import toolBar from './viewContainer/toolBar/index'
+import baseSelect from './textbox/baseSelect/index'
+import uploadFile from './uploadFile/index'
+import defineProgress from './defineProgress/index'
 
 
 const components = [
-  breadCrumb,
+  baseCrumb,
   defineTextarea,
   defineRow,
   defineSearch,
@@ -31,6 +34,9 @@ const components = [
   dateSelect,
   defineInput,
   textInput,
+  toolBar,
+  uploadFile,
+  defineProgress,
 ];
 
 //script标签方式映入
@@ -49,7 +55,7 @@ export default {
   //总体
   install,
   //支持按需引入
-  breadCrumb,
+  baseCrumb,
   defineTextarea,
   defineRow,
   defineSearch,
@@ -64,4 +70,7 @@ export default {
   dateSelect,
   defineInput,
   textInput,
+  toolBar,
+  uploadFile,
+  defineProgress
 }
