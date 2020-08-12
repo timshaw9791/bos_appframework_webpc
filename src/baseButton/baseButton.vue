@@ -1,5 +1,5 @@
 <template>
-    <div data-button-container="entity-button-container" :data-label="label" 
+    <div data-button-container="entity-button-container" :data-label="label"  
          class="base-button-container" :style="`float:${align};margin:${margin}`">
         <button class="button" :class="[type,size,{disabled: disabled||throttleState}]" @click="clickBtn">
             <i class="iconfont" :class="[icon, iconAlign]"></i>

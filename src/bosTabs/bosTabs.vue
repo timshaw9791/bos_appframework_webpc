@@ -2,7 +2,7 @@
     <div :style="`margin:${margin}`">
         <div class="bos-card-container" :style="`width:${width}`">
             <div class="top-tabs" v-if="tabs&&header" >
-                <div v-for="(item, i) in label" :key="i"
+                <div v-for="(item, i) in label" :key="i" data-button-container="entity-button-container" :data-label="item.label"
                      :class="{'tabs':true,'selected':selectedIndex==i}"
                      @click="changeTab(i, item)">{{ item.label }}</div>
             </div>

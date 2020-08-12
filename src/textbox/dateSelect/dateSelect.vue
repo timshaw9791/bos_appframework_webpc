@@ -1,5 +1,6 @@
 <template>
-    <div :class="[styleObj,'date-select-continer',{disabled:disabled&&!inTable},{border:!(inTable&&disabled)}]"
+    <div data-select-container="entity-select-container" :data-label="label"
+         :class="[styleObj,'date-select-continer',{disabled:disabled&&!inTable},{border:!(inTable&&disabled)}]"
          ref="dateSelect"
          :style="`width:${fixWidth};margin:${fixMargin};align${align}`">
         <div class="label" v-if="!inTable">{{ label }}

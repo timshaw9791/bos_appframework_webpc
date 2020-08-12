@@ -1,5 +1,6 @@
 <template>
-    <div :class="[styleObj,{'text-input-container':true, 'bg-disabled':disabled}]" ref="textInput"
+    <div data-input-container="entity-input-container" :data-label="label"
+         :class="[styleObj,{'text-input-container':true, 'bg-disabled':disabled}]" ref="textInput"
          :style="'width:'+fixWidth+';height:'+height+'px;align:'+align+';margin:'+margin">
         <el-autocomplete style="width: 100%"
                          v-model="insideValue"

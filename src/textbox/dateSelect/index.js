@@ -5,4 +5,3 @@ dateSelect.intall = function (Vue){
 };
 
 export default dateSelect;
-

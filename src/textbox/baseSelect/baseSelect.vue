@@ -1,5 +1,6 @@
 <template>
-    <div class="base-select-container" :class="[styleObj]" @mouseleave="showOptions=false"
+    <div data-select-container="entity-select-container" :data-label="label"
+         class="base-select-container" :class="[styleObj]" @mouseleave="showOptions=false"
          :style="`width:${fixWidth};float:${align};margin:${margin}`" >
         <aside class="label" v-if="haveLabel">
             <i :class="`iconfont ${iconfont}`" v-if="iconfont"></i>
