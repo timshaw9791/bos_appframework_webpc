@@ -16,6 +16,8 @@ import toolBar from './viewContainer/toolBar/index'
 import baseSelect from './textbox/baseSelect/index'
 import uploadFile from './uploadFile/index'
 import defineProgress from './defineProgress/index'
+import dateInput from './Input/dateInput/index'
+import serviceDialog from './serviceDialog/index'
 
 
 const components = [
@@ -37,6 +39,8 @@ const components = [
   toolBar,
   uploadFile,
   defineProgress,
+  dateInput,
+  serviceDialog,
 ];
 
 //script标签方式映入
@@ -72,5 +76,7 @@ export default {
   textInput,
   toolBar,
   uploadFile,
-  defineProgress
+  defineProgress,
+  dateInput,
+  serviceDialog
 }
