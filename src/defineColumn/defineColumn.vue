@@ -5,7 +5,8 @@
     </template>
     <slot name="merge"></slot>
   </el-table-column>
-  <el-table-column :label="label" :fixed="fixed" :resizable="resizable" :type="columnType" :align="align" :width="cWidth" :min-width="'0.3125rem'" v-else></el-table-column>
+  <el-table-column :label="label" :fixed="fixed" :resizable="resizable" :type="columnType" :align="align" :width="cWidth" 
+                   :min-width="'0.3125rem'" v-else :reserve-selection="true"></el-table-column>
 </template>
 
 

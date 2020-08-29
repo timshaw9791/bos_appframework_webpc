@@ -3,7 +3,7 @@
         <el-table :data="data" :height="fixHeight" :border="border" ref="table" fit
                   :highlight-current-row="highLightCurrent" @current-change="changeCurrent"
                    @selection-change="handleSelectionChange" :default-sort="defaultSort" @sort-change="sortChange"
-                  :show-summary="showSummary" :summary-method="summaryFunc">
+                  :show-summary="showSummary" :summary-method="summaryFunc" row-key="name">
             <el-table-column label="序号" width="65" align="center" v-if="haveIndex" :fixed="indexFixed">
                 <template slot-scope="scope">{{(pageInfo.page-1)*pageInfo.size+scope.$index+1}}</template>
             </el-table-column>

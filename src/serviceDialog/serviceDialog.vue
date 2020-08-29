@@ -1,7 +1,7 @@
 <template>
     <div class="dialog" :data-title="title">
         <el-dialog :title="title" :visible.sync="showFlag" v-if="showFlag" center :before-close="handleClose"
-                   :width="width">
+                   :width="width" class="dialogbt">
             <slot></slot>
             <el-dialog
                     v-if="secondary"
@@ -135,5 +135,8 @@
         /deep/ .el-dialog__headerbtn /deep/ .el-dialog__close {
             color: white;
         }
+    }
+    .dialogbt {
+        margin: -50px;
     }
 </style>
