@@ -1,7 +1,7 @@
 <template>
     <div data-button-container="entity-button-container" :data-label="label"  
          class="base-button-container" :style="`float:${align};margin:${margin}`">
-        <button class="button" :class="[type,size,{disabled: disabled||throttleState}]" @click="clickBtn">
+        <button class="button" :class="[type,size,{disabled: disabled||throttleState}]" @click="clickBtn" :name="label">
             <i class="iconfont" :class="[icon, iconAlign]"></i>
             {{ label }}
         </button>

@@ -1,8 +1,9 @@
 <template>
     <div class="dialog" :data-title="title">
         <el-dialog :title="title" :visible.sync="showFlag" v-if="showFlag" center :before-close="handleClose"
-                   :width="width" class="dialogbt">
+                   :width="width">
             <slot></slot>
+
             <el-dialog
                     v-if="secondary"
                     width="30%"
@@ -14,14 +15,14 @@
                     您确定要放弃本次操作吗?
                 </div>
                 <div slot="footer" class="dialog-footer" v-if="!ismore">
-                    <el-button @click="innerVisible = false" data-test="button">取 消</el-button>
-                    <el-button type="primary" @click="cancel" data-test="button">确 定</el-button>
+                    <el-button @click="innerVisible = false" data-test="button" >取 消</el-button>
+                    <el-button type="primary" @click="cancel" data-test="button" >确 定</el-button>
                 </div>
             </el-dialog>
 
             <div slot="footer" class="dialog-footer" v-if="button">
-                <el-button @click="cancelDb" data-test="button">{{ cancelInfo }}</el-button>
-                <el-button type="primary" :disabled="disabled" @click="dialogConfirm" data-test="button">{{ confirmInfo
+                <el-button @click="cancelDb" data-test="button" name="取消">{{ cancelInfo }}</el-button>
+                <el-button type="primary" :disabled="disabled" @click="dialogConfirm" data-test="button" name="确定">{{ confirmInfo
                     }}
                 </el-button>
             </div>
@@ -135,8 +136,5 @@
         /deep/ .el-dialog__headerbtn /deep/ .el-dialog__close {
             color: white;
         }
-    }
-    .dialogbt {
-        margin: -50px;
     }
 </style>
